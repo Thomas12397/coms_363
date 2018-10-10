@@ -5,20 +5,17 @@ import java.sql.*;
 public class Example
 {
 	public static void main(String[] args) throws Exception {
-		// Load and register a JDBC driver
-		try {
-			// Load the driver (registers itself)
-			Class.forName("com.mysql.jdbc.Driver");
-		} catch (Exception E) {
-			System.err.println("Unable to load driver.");
-			E.printStackTrace();
-		}
+		
 		try {
 			// Connect to the database
 			Connection conn1;
-			String dbUrl = "jdbc:mysql://csdb.cs.iastate.edu:3306/YOUR_DATABASE";
-			String user = "YOUR_USERNAME";
-			String password = "YOUR_PASSWORD";
+			String dbUrl = "jdbc:mysql://csdb.cs.iastate.edu:3306/db363tclhaddy?"
+					+ "useUnicode=true&"
+					+ "useJDBCCompliantTimezoneShift=true&"
+					+ "useLegacyDatetimeCode=false&serverTimezone=UTC&"
+					+ "useSSL=false";
+			String user = "dbu363tclhaddy";
+			String password = "KtbE5978";
 			conn1 = DriverManager.getConnection(dbUrl, user, password);
 			System.out.println("*** Connected to the database ***");
 
