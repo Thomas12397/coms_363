@@ -1,0 +1,117 @@
+*** Connected to the database ***
+
+
+A)
+Min Tuyet: 120000
+Seth Carney: 100000
+Chad Moore: 100000
+Darren Lehmann: 80000
+Graeme Dilly: 120000
+John Bracewell: 100000
+Gavin Larson: 80000
+Philip Richards: 80000
+Ricky Ponting: 120000
+Richard Ellison: 100000
+
+Total Salary: 1000000
+
+
+B)
+2. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("956234659", "Senior", 4.0,"997111094")
+3. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("812073765", "Senior", 4.0,"386167477")
+4. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("907425648", "Sophomore", 4.0,"555010131")
+5. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("712524758", "Freshman", 4.0,"555010131")
+6. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("164776911", "Junior", 4.0,"201586985")
+7. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("191083779", "Senior", 4.0,"685744439")
+8. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("952145559", "Sophomore", 4.0,"836826630")
+9. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("212976207", "Freshman", 4.0,"555010131")
+10. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("712952591", "Junior", 3.98,"463249547")
+11. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("973071948", "Freshman", 3.98,"466388906")
+12. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("483223789", "Sophomore", 3.96,"555010131")
+13. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("328718420", "Sophomore", 3.96,"997111094")
+14. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("696302689", "Junior", 3.9,"463249547")
+15. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("273277984", "Sophomore", 3.9,"386167477")
+16. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("916916939", "Junior", 3.9,"696335701")
+17. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("477453864", "Freshman", 3.9,"961874958")
+18. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("483727101", "Senior", 3.89,"201586985")
+19. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("315967897", "Freshman", 3.89,"463249547")
+20. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("664353912", "Senior", 3.89,"466388906")
+21. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("466094162", "Senior", 3.89,"555010131")
+22. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("419180204", "Junior", 3.89,"466388906")
+23. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("432180765", "Freshman", 3.89,"201586985")
+24. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("722131306", "Senior", 3.89,"201586985")
+25. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("867910658", "Junior", 3.89,"386167477")
+26. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("164500920", "Senior", 3.89,"201586985")
+27. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("803024290", "Sophomore", 3.89,"997111094")
+28. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("876550324", "Freshman", 3.89,"836826630")
+29. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("785273479", "Freshman", 3.89,"685744439")
+30. Update is: Insert Into MeritList (StudentID, Classification, GPA, MentorID) Values ("965882492", "Junior", 3.89,"961874958")
+
+Successfully created the MeritList Table
+
+
+C)
+1. 164500920|Senior|3.89|
+2. 803024290|Sophomore|3.89|
+3. 785273479|Freshman|3.89|
+4. 722131306|Senior|3.89|
+5. 867910658|Junior|3.89|
+6. 876550324|Freshman|3.89|
+7. 664353912|Senior|3.89|
+8. 483727101|Senior|3.89|
+9. 466094162|Senior|3.89|
+10. 432180765|Freshman|3.89|
+11. 419180204|Junior|3.89|
+12. 315967897|Freshman|3.89|
+13. 965882492|Junior|3.89|
+14. 477453864|Freshman|3.9|
+15. 696302689|Junior|3.9|
+16. 273277984|Sophomore|3.9|
+17. 916916939|Junior|3.9|
+18. 483223789|Sophomore|3.96|
+19. 328718420|Sophomore|3.96|
+20. 973071948|Freshman|3.98|
+21. 712952591|Junior|3.98|
+22. 812073765|Senior|4.0|
+23. 712524758|Freshman|4.0|
+24. 907425648|Sophomore|4.0|
+25. 212976207|Freshman|4.0|
+26. 952145559|Sophomore|4.0|
+27. 956234659|Senior|4.0|
+28. 191083779|Senior|4.0|
+29. 164776911|Junior|4.0|
+
+
+D)
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "201586985" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "386167477" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "463249547" then Instructor.Salary*1.08 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "466388906" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "555010131" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "685744439" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "696335701" then Instructor.Salary*1.08 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "836826630" then Instructor.Salary*1.06 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "961874958" then Instructor.Salary*1.08 ELSE Instructor.Salary END
+Update is: update Instructor set Instructor.Salary = CASE WHEN Instructor.InstructorID = "997111094" then Instructor.Salary*1.1 ELSE Instructor.Salary END
+
+Successfully updated the instructor salaries
+
+
+E)
+Min Tuyet: 132000
+Seth Carney: 110000
+Chad Moore: 108000
+Darren Lehmann: 88000
+Graeme Dilly: 132000
+John Bracewell: 110000
+Gavin Larson: 86400
+Philip Richards: 84800
+Ricky Ponting: 129600
+Richard Ellison: 110000
+
+Total Salary: 1090800
+
+
+F)
+Dropped MeritList
+*** Closed all statements and connections successfully ***
