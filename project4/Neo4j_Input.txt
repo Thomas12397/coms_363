@@ -1,4 +1,5 @@
-// Thomas Haddy 12/8/2018
+// Author: Thomas Haddy 12/8/2018
+
 // Item 1
 MATCH (sp:Person)<-[:S2P]-(s)<-[:Mentors]-(m)-[M2P]-(mp)
 WHERE exists(mp.Name) AND exists(sp.Name) 
